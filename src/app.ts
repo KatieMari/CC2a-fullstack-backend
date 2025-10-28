@@ -9,15 +9,6 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.get('/counter', (req, res) => {
-  res.send(counter);
-})
-
-app.post('/counter', (req, res) => {
-  counter += 1;
-  res.send(counter);
-})
-
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
