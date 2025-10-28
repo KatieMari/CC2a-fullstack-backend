@@ -1,10 +1,21 @@
 import express from "express";
 
+let counter = 0;
+
 const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
+})
+
+app.get('/counter', (req, res) => {
+  res.send(counter);
+})
+
+app.post('/counter', (req, res) => {
+  counter += 1;
+  res.send(counter);
 })
 
 app.listen(port, () => {
