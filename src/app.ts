@@ -1,7 +1,5 @@
 import express from "express";
 
-let counter = 0;
-
 const app = express();
 const port = 3000;
 
