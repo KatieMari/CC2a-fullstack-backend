@@ -13,7 +13,7 @@ app.use(cors(corsOptions));
 
 // hello world response
 app.get('/', (req, res) => {
-  res.send({ res: 'Hello World!' })
+  res.send({ message: 'Hello World!' })
 })
 
 // start server
